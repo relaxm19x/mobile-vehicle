@@ -15,6 +15,8 @@
     --maroon: #6B1F2E;
     --maroon-bright: #8B2538;
     --gold: #C9A961;
+    --gold-light: #d4af37;
+    --gold-dark: #b8952e;
     --white: #ffffff;
     --text-gray: #b8b8c8;
     --glass: rgba(255, 255, 255, 0.05);
@@ -109,12 +111,14 @@ nav ul li a:hover { color: var(--gold); }
 .service-content h3 { font-size: 1.4rem; color: var(--white); margin-bottom: 15px; font-weight: 700; }
 .service-content p { color: var(--text-gray); font-size: 1rem; line-height: 1.9; font-weight: 400; }
 
-.stats-bar { padding: 80px 5%; background: linear-gradient(135deg, var(--maroon-dark), var(--navy)); position: relative; overflow: hidden; }
+/* شريط الإحصائيات - اللون الذهبي الفاتح */
+.stats-bar { padding: 80px 5%; background: linear-gradient(135deg, #d4af37 0%, #c9a961 50%, #b8952e 100%); position: relative; overflow: hidden; }
+.stats-bar::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at 30% 50%, rgba(255, 255, 255, 0.15), transparent 60%); animation: pulseBg 8s ease-in-out infinite; }
 .stats-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; max-width: 1200px; margin: 0 auto; position: relative; z-index: 2; text-align: center; }
-.stat-item i { font-size: 2.8rem; color: var(--gold); margin-bottom: 15px; display: inline-block; transition: transform 0.5s ease; }
+.stat-item i { font-size: 2.8rem; color: #4A0E1F; margin-bottom: 15px; display: inline-block; transition: transform 0.5s ease; text-shadow: 0 2px 5px rgba(255, 255, 255, 0.3); }
 .stat-item:hover i { transform: rotateY(360deg); }
-.stat-item .stat-num { font-size: 2.8rem; font-weight: 900; color: var(--white); display: block; line-height: 1; }
-.stat-item .stat-label { color: rgba(255, 255, 255, 0.85); margin-top: 10px; font-size: 1rem; font-weight: 500; }
+.stat-item .stat-num { font-size: 2.8rem; font-weight: 900; color: #0a0e27; display: block; line-height: 1; text-shadow: 0 2px 5px rgba(255, 255, 255, 0.3); }
+.stat-item .stat-label { color: #141b3d; margin-top: 10px; font-size: 1rem; font-weight: 700; }
 
 .gallery-section { padding: 120px 5%; background: var(--navy-dark); }
 .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 250px; gap: 15px; max-width: 1400px; margin: 0 auto; }
@@ -292,7 +296,6 @@ footer::before { content: ''; position: absolute; top: 0; right: 0; width: 100%;
         <p>نقدم باقات تأجيرية وخدمية مخصصة للشركات والجهات الحكومية</p>
     </div>
     <div class="services-grid">
-        <!-- خدمة 1 - صورة عشوائية للسيارات -->
         <div class="service-card" data-aos="zoom-in-up" data-aos-delay="0">
             <div class="service-img-wrap">
                 <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2070&auto=format&fit=crop" alt="تأجير السيارات">
@@ -304,10 +307,9 @@ footer::before { content: ''; position: absolute; top: 0; right: 0; width: 100%;
                 <p>مركبات SUV للرحلات الداخلية والطرق الوعرة، سيارات فاخرة تناسب الأعمال والضيافة، وسيارات اقتصادية للاستخدام اليومي.</p>
             </div>
         </div>
-        <!-- خدمة 2 - صورة عشوائية للشاحنات -->
         <div class="service-card" data-aos="zoom-in-up" data-aos-delay="100">
             <div class="service-img-wrap">
-                <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=2070&auto=format&fit=crop" alt="تأجير الشاحنات">
+                <img src="service-trucks.jpeg" alt="تأجير الشاحنات">
                 <div class="service-number">02</div>
             </div>
             <div class="service-content">
@@ -316,7 +318,6 @@ footer::before { content: ''; position: absolute; top: 0; right: 0; width: 100%;
                 <p>شاحنات خفيفة للنقل داخل المدن، شاحنات ثقيلة للمشاريع والإنشاءات، شاحنات مبردة للبضائع الحساسة، وخدمة سحب المركبات.</p>
             </div>
         </div>
-        <!-- خدمة 3 - صورة عشوائية للحافلات -->
         <div class="service-card" data-aos="zoom-in-up" data-aos-delay="200">
             <div class="service-img-wrap">
                 <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=2070&auto=format&fit=crop" alt="تأجير الحافلات">
@@ -328,7 +329,6 @@ footer::before { content: ''; position: absolute; top: 0; right: 0; width: 100%;
                 <p>نقل سياحي (بسائق أو بدون)، نقل متخصص، ونقل متردد. نوفر مركبات مخصصة لدعم الفعاليات والمعارض والمواسم.</p>
             </div>
         </div>
-        <!-- خدمة 4 - صورتك الخاصة service-management1.jpeg -->
         <div class="service-card" data-aos="zoom-in-up" data-aos-delay="300">
             <div class="service-img-wrap">
                 <img src="service-management1.jpeg" alt="إدارة الأساطيل">

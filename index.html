@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>العربة المتنقلة | Mobile Vehicle - خدمات لوجستية</title>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 <style>
@@ -20,7 +20,7 @@
     --glass: rgba(255, 255, 255, 0.05);
     --glass-border: rgba(255, 255, 255, 0.1);
 }
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Noto Sans Arabic', sans-serif; }
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; }
 html { scroll-behavior: smooth; }
 body { background-color: var(--navy-dark); color: var(--white); line-height: 1.8; overflow-x: hidden; font-weight: 400; }
 
@@ -32,7 +32,7 @@ header.scrolled { padding: 10px 5%; background: rgba(10, 14, 39, 0.95); backdrop
 .logo-img { height: 65px; width: auto; object-fit: contain; transition: height 0.4s ease; background: white; padding: 5px 10px; border-radius: 8px; }
 header.scrolled .logo-img { height: 50px; }
 
-nav ul { list-style: none; display: flex; gap: 25px; }
+nav ul { list-style: none; display: flex; gap: 22px; }
 nav ul li a { text-decoration: none; color: var(--white); font-weight: 500; font-size: 14px; transition: all 0.3s; position: relative; padding-bottom: 5px; }
 nav ul li a::after { content: ''; position: absolute; bottom: 0; right: 0; width: 0; height: 2px; background: linear-gradient(90deg, var(--maroon), var(--gold)); transition: width 0.3s ease; }
 nav ul li a:hover::after { width: 100%; }
@@ -50,7 +50,7 @@ nav ul li a:hover { color: var(--gold); }
 .hero-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; animation: fadeInUp 1s ease 0.7s both; }
 @keyframes fadeInUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
 
-.btn { display: inline-flex; align-items: center; gap: 10px; padding: 15px 35px; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 15px; transition: all 0.4s ease; cursor: pointer; border: none; position: relative; overflow: hidden; font-family: 'Noto Sans Arabic', sans-serif; }
+.btn { display: inline-flex; align-items: center; gap: 10px; padding: 15px 35px; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 15px; transition: all 0.4s ease; cursor: pointer; border: none; position: relative; overflow: hidden; font-family: 'Cairo', sans-serif; }
 .btn-primary { background: linear-gradient(135deg, var(--maroon), var(--maroon-dark)); color: var(--white); box-shadow: 0 10px 30px rgba(107, 31, 46, 0.5); }
 .btn-primary:hover { transform: translateY(-5px); box-shadow: 0 15px 40px rgba(107, 31, 46, 0.7); }
 .btn-outline { background: rgba(255, 255, 255, 0.1); border: 2px solid rgba(255, 255, 255, 0.4); color: var(--white); backdrop-filter: blur(10px); }
@@ -60,7 +60,7 @@ nav ul li a:hover { color: var(--gold); }
 @keyframes bounce { 0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); } 40% { transform: translateX(-50%) translateY(-15px); } 60% { transform: translateX(-50%) translateY(-7px); } }
 
 .section-title { text-align: center; margin-bottom: 70px; }
-.section-label { display: block; font-size: 1.6rem; font-weight: 700; color: var(--white); margin-bottom: 12px; letter-spacing: 1px; opacity: 0.95; }
+.section-label { display: block; font-size: 1.5rem; font-weight: 700; color: var(--maroon-bright); margin-bottom: 12px; letter-spacing: 1.5px; }
 .section-title h2 { font-size: 2.8rem; font-weight: 900; color: var(--white); margin-bottom: 15px; position: relative; display: inline-block; }
 .section-title h2::after { content: ''; position: absolute; bottom: -15px; right: 50%; transform: translateX(50%); width: 80px; height: 4px; background: linear-gradient(90deg, var(--maroon), var(--navy)); border-radius: 2px; animation: expandLine 3s ease infinite; }
 @keyframes expandLine { 0%, 100% { width: 80px; } 50% { width: 160px; } }
@@ -112,7 +112,7 @@ nav ul li a:hover { color: var(--gold); }
 .service-content h3 { font-size: 1.4rem; color: var(--white); margin-bottom: 15px; font-weight: 700; }
 .service-content p { color: var(--text-gray); font-size: 1rem; line-height: 1.9; }
 
-/* ===== تفاصيل الخدمات (جديد) ===== */
+/* تفاصيل الخدمات */
 .detailed-services { padding: 120px 5%; background: var(--navy-dark); position: relative; overflow: hidden; }
 .detailed-services::before { content: ''; position: absolute; top: -30%; left: -20%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(201, 169, 97, 0.08), transparent 70%); border-radius: 50%; animation: float 15s ease-in-out infinite; }
 .details-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; max-width: 1400px; margin: 0 auto; position: relative; z-index: 2; }
@@ -135,7 +135,7 @@ nav ul li a:hover { color: var(--gold); }
 .stat-item .stat-num { font-size: 2.5rem; font-weight: 900; color: var(--white); display: block; line-height: 1; }
 .stat-item .stat-label { color: rgba(255, 255, 255, 0.9); margin-top: 10px; font-size: 1rem; font-weight: 600; }
 
-/* ===== التغطية الجغرافية (جديد) ===== */
+/* التغطية الجغرافية */
 .coverage-section { padding: 120px 5%; background: linear-gradient(180deg, var(--navy) 0%, var(--navy-dark) 100%); }
 .coverage-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; max-width: 1000px; margin: 0 auto; }
 .coverage-city { padding: 20px; background: var(--glass); border: 1px solid var(--glass-border); border-radius: 12px; text-align: center; transition: all 0.4s ease; backdrop-filter: blur(10px); }
@@ -144,20 +144,18 @@ nav ul li a:hover { color: var(--gold); }
 .coverage-city:hover i { transform: scale(1.3); color: var(--gold); }
 .coverage-city span { color: var(--white); font-weight: 600; font-size: 1rem; }
 
-/* معرض الصور */
+/* معرض الصور - موحّد */
 .gallery-section { padding: 120px 5%; background: var(--navy-dark); }
-.gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 250px; gap: 15px; max-width: 1400px; margin: 0 auto; }
-.gallery-item { position: relative; overflow: hidden; border-radius: 15px; cursor: pointer; border: 1px solid var(--glass-border); }
-.gallery-item:nth-child(1) { grid-column: span 2; grid-row: span 2; }
-.gallery-item:nth-child(6) { grid-column: span 2; }
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 1200px; margin: 0 auto; }
+.gallery-item { position: relative; overflow: hidden; border-radius: 15px; cursor: pointer; border: 1px solid var(--glass-border); aspect-ratio: 4 / 3; }
 .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.8s ease; }
-.gallery-item::after { content: '\f00e'; font-family: 'Font Awesome 6 Free'; font-weight: 900; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0); color: var(--white); font-size: 2.5rem; transition: transform 0.4s ease; z-index: 2; }
+.gallery-item::after { content: '\f00e'; font-family: 'Font Awesome 6 Free'; font-weight: 900; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0); color: var(--white); font-size: 2rem; transition: transform 0.4s ease; z-index: 2; }
 .gallery-item::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(107, 31, 46, 0), rgba(20, 27, 61, 0)); transition: background 0.4s ease; z-index: 1; }
 .gallery-item:hover::before { background: linear-gradient(135deg, rgba(107, 31, 46, 0.8), rgba(20, 27, 61, 0.8)); }
 .gallery-item:hover::after { transform: translate(-50%, -50%) scale(1); }
 .gallery-item:hover img { transform: scale(1.15); }
 
-/* لماذا نحن - موسّع */
+/* لماذا نحن */
 .why-us { padding: 120px 5%; background: linear-gradient(180deg, var(--navy) 0%, var(--navy-dark) 100%); }
 .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 25px; max-width: 1400px; margin: 0 auto; }
 .feature-card { padding: 35px 25px; background: var(--glass); border: 1px solid var(--glass-border); border-radius: 20px; backdrop-filter: blur(10px); text-align: center; transition: all 0.5s ease; position: relative; overflow: hidden; }
@@ -167,7 +165,7 @@ nav ul li a:hover { color: var(--gold); }
 .feature-card h3 { font-size: 1.2rem; color: var(--white); margin-bottom: 12px; font-weight: 700; }
 .feature-card p { color: var(--text-gray); font-size: 0.95rem; line-height: 1.8; }
 
-/* ===== آراء العملاء (جديد) ===== */
+/* آراء العملاء */
 .testimonials-section { padding: 120px 5%; background: var(--navy-dark); position: relative; overflow: hidden; }
 .testimonials-section::before { content: ''; position: absolute; top: -30%; right: -20%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(107, 31, 46, 0.15), transparent 70%); border-radius: 50%; animation: float 15s ease-in-out infinite; }
 .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; max-width: 1300px; margin: 0 auto; position: relative; z-index: 2; }
@@ -197,7 +195,7 @@ nav ul li a:hover { color: var(--gold); }
 .app-images img:hover { transform: translateY(-15px) scale(1.03); }
 @keyframes floatApp { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
 
-/* ===== نموذج طلب عرض سعر (جديد) ===== */
+/* نموذج طلب عرض سعر */
 .quote-section { padding: 120px 5%; background: var(--navy-dark); position: relative; overflow: hidden; }
 .quote-section::before { content: ''; position: absolute; bottom: -30%; left: -20%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(201, 169, 97, 0.08), transparent 70%); border-radius: 50%; animation: float 15s ease-in-out infinite; }
 .quote-container { max-width: 900px; margin: 0 auto; position: relative; z-index: 2; }
@@ -206,13 +204,13 @@ nav ul li a:hover { color: var(--gold); }
 .quote-form .form-group { display: flex; flex-direction: column; }
 .quote-form label { color: var(--white); font-weight: 600; margin-bottom: 10px; font-size: 0.95rem; }
 .quote-form label i { color: var(--maroon-bright); margin-left: 6px; }
-.quote-form input, .quote-form select, .quote-form textarea { padding: 14px 18px; background: rgba(255, 255, 255, 0.05); border: 1px solid var(--glass-border); border-radius: 12px; color: var(--white); font-family: 'Noto Sans Arabic', sans-serif; font-size: 1rem; transition: all 0.3s ease; outline: none; }
+.quote-form input, .quote-form select, .quote-form textarea { padding: 14px 18px; background: rgba(255, 255, 255, 0.05); border: 1px solid var(--glass-border); border-radius: 12px; color: var(--white); font-family: 'Cairo', sans-serif; font-size: 1rem; transition: all 0.3s ease; outline: none; }
 .quote-form input:focus, .quote-form select:focus, .quote-form textarea:focus { border-color: var(--maroon-bright); background: rgba(255, 255, 255, 0.08); box-shadow: 0 0 0 3px rgba(107, 31, 46, 0.2); }
 .quote-form select { cursor: pointer; }
 .quote-form select option { background: var(--navy-dark); color: var(--white); }
 .quote-form textarea { min-height: 120px; resize: vertical; }
 .quote-form .form-full { margin-bottom: 20px; }
-.quote-submit { width: 100%; padding: 16px; background: linear-gradient(135deg, var(--maroon), var(--maroon-dark)); color: var(--white); border: none; border-radius: 12px; font-size: 1.1rem; font-weight: 700; cursor: pointer; transition: all 0.4s ease; font-family: 'Noto Sans Arabic', sans-serif; display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 10px; }
+.quote-submit { width: 100%; padding: 16px; background: linear-gradient(135deg, var(--maroon), var(--maroon-dark)); color: var(--white); border: none; border-radius: 12px; font-size: 1.1rem; font-weight: 700; cursor: pointer; transition: all 0.4s ease; font-family: 'Cairo', sans-serif; display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 10px; }
 .quote-submit:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(107, 31, 46, 0.6); }
 
 /* الفوتر */
@@ -250,7 +248,6 @@ footer::before { content: ''; position: absolute; top: 0; right: 0; width: 100%;
     .about-content, .vision-grid, .app-container { grid-template-columns: 1fr; }
     .footer-content { grid-template-columns: 1fr 1fr; }
     .gallery-grid { grid-template-columns: repeat(2, 1fr); }
-    .gallery-item:nth-child(1) { grid-column: span 2; grid-row: span 1; }
     .quote-form .form-row { grid-template-columns: 1fr; }
 }
 @media (max-width: 768px) {
@@ -266,9 +263,7 @@ footer::before { content: ''; position: absolute; top: 0; right: 0; width: 100%;
     .stat-box .num { font-size: 1.5rem; }
     .stat-box .label { font-size: 11px; }
     .footer-content { grid-template-columns: 1fr; gap: 30px; }
-    .gallery-grid { grid-template-columns: 1fr; grid-auto-rows: 220px; }
-    .gallery-item:nth-child(1) { grid-column: span 1; }
-    .gallery-item:nth-child(6) { grid-column: span 1; }
+    .gallery-grid { grid-template-columns: 1fr; }
     .app-images { grid-template-columns: 1fr; }
     .whatsapp-float { width: 55px; height: 55px; font-size: 28px; bottom: 20px; left: 20px; }
     .back-to-top { bottom: 90px; left: 20px; width: 45px; height: 45px; }
@@ -413,7 +408,7 @@ footer::before { content: ''; position: absolute; top: 0; right: 0; width: 100%;
     </div>
 </section>
 
-<!-- تفاصيل الخدمات (جديد) -->
+<!-- تفاصيل الخدمات -->
 <section class="detailed-services" id="details">
     <div class="section-title" data-aos="fade-up">
         <span class="section-label">تفاصيل خدماتنا</span>
@@ -490,7 +485,7 @@ footer::before { content: ''; position: absolute; top: 0; right: 0; width: 100%;
     </div>
 </section>
 
-<!-- شريط الإحصائيات - موسّع -->
+<!-- شريط الإحصائيات -->
 <section class="stats-bar">
     <div class="stats-container">
         <div class="stat-item" data-aos="zoom-in" data-aos-delay="0">
@@ -521,7 +516,7 @@ footer::before { content: ''; position: absolute; top: 0; right: 0; width: 100%;
     </div>
 </section>
 
-<!-- التغطية الجغرافية (جديد) -->
+<!-- التغطية الجغرافية -->
 <section class="coverage-section">
     <div class="section-title" data-aos="fade-up">
         <span class="section-label">تغطيتنا</span>
@@ -544,7 +539,7 @@ footer::before { content: ''; position: absolute; top: 0; right: 0; width: 100%;
     </div>
 </section>
 
-<!-- معرض الصور -->
+<!-- معرض الصور - موحّد -->
 <section class="gallery-section" id="gallery">
     <div class="section-title" data-aos="fade-up">
         <h2>نظرة على مركباتنا</h2>
@@ -552,15 +547,15 @@ footer::before { content: ''; position: absolute; top: 0; right: 0; width: 100%;
     </div>
     <div class="gallery-grid">
         <div class="gallery-item" data-aos="fade-up" data-aos-delay="0"><img src="gallery1.jpeg" alt="شاحنة"></div>
-        <div class="gallery-item" data-aos="fade-up" data-aos-delay="100"><img src="gallery2.jpeg" alt="فانات"></div>
-        <div class="gallery-item" data-aos="fade-up" data-aos-delay="200"><img src="gallery3.jpeg" alt="عامل يغلّف الطرد"></div>
-        <div class="gallery-item" data-aos="fade-up" data-aos-delay="300"><img src="gallery4.jpeg" alt="شاحنة صغيرة وحافلة"></div>
-        <div class="gallery-item" data-aos="fade-up" data-aos-delay="400"><img src="gallery5.jpeg" alt="شاحنة صغيرة"></div>
-        <div class="gallery-item" data-aos="fade-up" data-aos-delay="500"><img src="gallery6.jpeg" alt="فان أبيض"></div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="50"><img src="gallery2.jpeg" alt="فانات"></div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="100"><img src="gallery3.jpeg" alt="عامل يغلّف الطرد"></div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="150"><img src="gallery4.jpeg" alt="شاحنة صغيرة وحافلة"></div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="200"><img src="gallery5.jpeg" alt="شاحنة صغيرة"></div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="250"><img src="gallery6.jpeg" alt="فان أبيض"></div>
     </div>
 </section>
 
-<!-- لماذا نحن - موسّع (7 مزايا) -->
+<!-- لماذا نحن -->
 <section class="why-us" id="why">
     <div class="section-title" data-aos="fade-up">
         <h2>ما يميز العربة المتنقلة</h2>
@@ -610,7 +605,7 @@ footer::before { content: ''; position: absolute; top: 0; right: 0; width: 100%;
     </div>
 </section>
 
-<!-- آراء العملاء (جديد) -->
+<!-- آراء العملاء -->
 <section class="testimonials-section">
     <div class="section-title" data-aos="fade-up">
         <span class="section-label">ماذا يقول عملاؤنا</span>
@@ -681,7 +676,7 @@ footer::before { content: ''; position: absolute; top: 0; right: 0; width: 100%;
     </div>
 </section>
 
-<!-- نموذج طلب عرض سعر (جديد) -->
+<!-- نموذج طلب عرض سعر -->
 <section class="quote-section" id="quote">
     <div class="section-title" data-aos="fade-up">
         <span class="section-label">اطلب عرض سعر</span>
@@ -816,7 +811,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// نموذج عرض السعر - إرسال عبر واتساب
+// نموذج عرض السعر
 document.getElementById('quoteForm').addEventListener('submit', function(e) {
     e.preventDefault();
     const name = document.getElementById('name').value;

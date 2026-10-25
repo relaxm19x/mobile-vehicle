@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>العربة المتنقلة | تفاصيل الخدمة</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<header id="mainHeader">
+    <div class="logo"><a href="index.html"><img src="logo.jpeg" alt="شعار" class="logo-img"></a></div>
+    <nav>
+        <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="about.html">من نحن</a></li>
+            <li><a href="services.html" class="active">خدماتنا</a></li>
+            <li><a href="fleet.html">أسطولنا</a></li>
+            <li><a href="why-us.html">لماذا نحن</a></li>
+            <li><a href="quote.html">اطلب عرض سعر</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="inner-page" style="padding-bottom: 120px; min-height: 70vh;">
+    <div style="max-width: 1000px; margin: 0 auto; padding: 0 5%;">
+        <h1 id="serviceTitle" style="font-size: 2.8rem; color: var(--white); margin-bottom: 30px; text-align: center;">جاري التحميل...</h1>
+        
+        <div id="serviceContent" style="background: var(--glass); padding: 40px; border-radius: 20px; border: 1px solid var(--glass-border);">
+            <!-- سيتم تعبئة المحتوى هنا تلقائياً -->
+        </div>
+        
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="quote.html" class="btn btn-primary"><i class="fas fa-file-invoice-dollar"></i> اطلب هذه الخدمة الآن</a>
+        </div>
+    </div>
+</section>
+
+<div class="social-fixed">
+    <a href="https://wa.me/966505509571" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://x.com/Mobilevehiclesa" target="_blank"><i class="fab fa-x-twitter"></i></a>
+    <a href="https://instagram.com/Mobilevehiclesa" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://linkedin.com/company/Mobilevehiclesa" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+</div>
+
+<footer>
+    <!-- انسخي نفس الفوتر السابق هنا -->
+    <div class="footer-content">
+        <div class="footer-brand">
+            <img src="logo.jpeg" alt="شعار">
+            <p>شركة سعودية متخصصة في الخدمات اللوجستية، نعمل على تلبية احتياجات الأفراد والشركات عبر أسطول متنوع وخدمات مرنة.</p>
+            <div class="social-links">
+                <a href="https://x.com/Mobilevehiclesa" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://instagram.com/Mobilevehiclesa" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/company/Mobilevehiclesa" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://wa.me/966505509571" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h3>روابط سريعة</h3>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="services.html">خدماتنا</a></li>
+                <li><a href="fleet.html">أسطولنا</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>خدماتنا</h3>
+            <ul>
+                <li><a href="service-details.html?service=cars">تأجير السيارات</a></li>
+                <li><a href="service-details.html?service=trucks">تأجير الشاحنات</a></li>
+                <li><a href="service-details.html?service=buses">تأجير الحافلات</a></li>
+                <li><a href="service-details.html?service=fleet">إدارة الأساطيل</a></li>
+            </ul>
+        </div>
+        <div class="footer-col contact-info">
+            <h3>تواصل معنا</h3>
+            <p><i class="fas fa-phone-alt"></i> <a href="tel:+920016173">+920016173</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:Info@mobilevehicle.sa">Info@mobilevehicle.sa</a></p>
+            <p><i class="fas fa-globe"></i> <a href="https://MOBILEVEHICLE.COM" target="_blank">MOBILEVEHICLE.COM</a></p>
+        </div>
+    </div>
+    <div class="footer-bottom">جميع الحقوق محفوظة &copy; 2026 <span>شركة العربة المتنقلة للخدمات اللوجستية</span></div>
+</footer>
+
+<a href="https://wa.me/966505509571" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+<button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({ duration: 1000, once: true });
+const progressBar = document.getElementById('progressBar');
+const header = document.getElementById('mainHeader');
+const backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+    const scrollTop = window.pageYOffset;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    progressBar.style.width = (scrollTop / docHeight) * 100 + '%';
+    header.classList.toggle('scrolled', scrollTop > 100);
+    backToTop.classList.toggle('show', scrollTop > 500);
+});
+backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+// الكود الديناميكي لصفحة التفاصيل
+const urlParams = new URLSearchParams(window.location.search);
+const service = urlParams.get('service');
+
+const servicesData = {
+    cars: {
+        title: 'تأجير السيارات',
+        image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2070&auto=format&fit=crop',
+        content: `
+            <h3 style="color: var(--maroon-bright); margin-bottom: 15px;">نوفر لك السيارة المناسبة لكل رحلة</h3>
+            <p style="color: var(--text-gray); line-height: 2; margin-bottom: 20px;">نقدم أسطولاً متنوعاً يلبي جميع احتياجاتك، سواء للاستخدام الشخصي أو للشركات. جميع سياراتنا حديثة الموديلات وتخضع لصيانة دورية لضمان سلامتك وراحتك.</p>
+            <h4 style="color: var(--white); margin: 20px 0 10px;">أنواع السيارات:</h4>
+            <ul style="color: var(--text-gray); list-style: none; padding: 0;">
+                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--gold); margin-left: 10px;"></i> سيارات اقتصادية وعملية للاستخدام اليومي.</li>
+                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--gold); margin-left: 10px;"></i> سيارات فاخرة تناسب الأعمال والضيافة.</li>
+                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--gold); margin-left: 10px;"></i> مركبات SUV للرحلات الداخلية والطرق الوعرة.</li>
+            </ul>`
+    },
+    trucks: {
+        title: 'تأجير الشاحنات',
+        image: 'service-trucks.jpeg',
+        content: `
+            <h3 style="color: var(--maroon-bright); margin-bottom: 15px;">حلول النقل الثقيل والخفيف</h3>
+            <p style="color: var(--text-gray); line-height: 2; margin-bottom: 20px;">نوفر شاحنات مجهزة بأحدث التقنيات لضمان نقل آمن وسريع لجميع أنواع البضائع والمعدات.</p>
+            <h4 style="color: var(--white); margin: 20px 0 10px;">الخدمات المتوفرة:</h4>
+            <ul style="color: var(--text-gray); list-style: none; padding: 0;">
+                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--gold); margin-left: 10px;"></i> شاحنات خفيفة للنقل داخل المدن.</li>
+                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--gold); margin-left: 10px;"></i> شاحنات ثقيلة للمشاريع والإنشاءات.</li>
+                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--gold); margin-left: 10px;"></i> شاحنات مبردة للبضائع الحساسة.</li>
+                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--gold); margin-left: 10px;"></i> خدمة سحب المركبات على الطريق.</li>
+            </ul>`
+    },
+    buses: {
+        title: 'تأجير الحافلات',
+        image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=2070&auto=format&fit=crop',
+        content: `
+            <h3 style="color: var(--maroon-bright); margin-bottom: 15px;">نقل جماعي مريح وآمن</h3>
+            <p style="color: var(--text-gray); line-height: 2; margin-bottom: 20px;">نوفر حافلات حديثة ومكيفة تناسب جميع الفعاليات والمناسبات، مع سائقين محترفين لضمان رحلة سلسة.</p>
+            <h4 style="color: var(--white); margin: 20px 0 10px;">أنواع النقل:</h4>
+            <ul style="color: var(--text-gray); list-style: none; padding: 0;">
+                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--gold); margin-left: 10px;"></i> نقل سياحي (بسائق أو بدون).</li>
+                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--gold); margin-left: 10px;"></i> نقل متخصص للفعاليات والمعارض.</li>
+                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--gold); margin-left: 10px;"></i> نقل متردد للموظفين والطلاب.</li>
+            </ul>`
+    },
+    fleet: {
+        title: 'إدارة الأساطيل',
+        image: 'service-management1.jpeg',
+        content: `
+            <h3 style="color: var(--maroon-bright); margin-bottom: 15px;">دعنا ندير أسطولك بالكامل</h3>
+            <p style="color: var(--text-gray); line-height: 2; margin-bottom: 20px;">نقدم حلولاً متكاملة للشركات والجهات الحكومية لإدارة وتشغيل الأساطيل بكفاءة عالية، مما يوفر عليك الوقت والتكاليف.</p>
+            <h4 style="color: var(--white); margin: 20px 0 10px;">ما نقدمه:</h4>
+            <ul style="color: var(--text-gray); list-style: none; padding: 0;">
+                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--gold); margin-left: 10px;"></i> إدارة أساطيل متكاملة وصيانة دورية.</li>
+                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--gold); margin-left: 10px;"></i> ضمان الجاهزية التشغيلية الكاملة.</li>
+                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--gold); margin-left: 10px;"></i> عقود مؤسسية بأسعار تفضيلية.</li>
+                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--gold); margin-left: 10px;"></i> تقارير دورية عن الأداء والتشغيل.</li>
+            </ul>`
+    }
+};
+
+if (servicesData[service]) {
+    document.getElementById('serviceTitle').innerText = servicesData[service].title;
+    document.getElementById('serviceContent').innerHTML = `
+        <img src="${servicesData[service].image}" alt="${servicesData[service].title}" style="width: 100%; height: 350px; object-fit: cover; border-radius: 15px; margin-bottom: 30px;">
+        ${servicesData[service].content}
+    `;
+} else {
+    document.getElementById('serviceTitle').innerText = 'الخدمة غير موجودة';
+    document.getElementById('serviceContent').innerHTML = '<p style="color: white; text-align: center;">عذراً، الخدمة التي تبحث عنها غير متوفرة.</p>';
+}
+</script>
+</body>
+</html>

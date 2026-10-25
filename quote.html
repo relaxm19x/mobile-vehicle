@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>العربة المتنقلة | اطلب عرض سعر</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<header id="mainHeader">
+    <div class="logo"><a href="index.html"><img src="logo.jpeg" alt="شعار" class="logo-img"></a></div>
+    <nav>
+        <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="about.html">من نحن</a></li>
+            <li><a href="services.html">خدماتنا</a></li>
+            <li><a href="fleet.html">أسطولنا</a></li>
+            <li><a href="why-us.html">لماذا نحن</a></li>
+            <li><a href="quote.html" class="active">اطلب عرض سعر</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="quote-section inner-page" id="quote">
+    <div class="section-title" data-aos="fade-up">
+        <span class="section-label">اطلب عرض سعر</span>
+        <h2>احصل على عرض سعر فوري</h2>
+        <p>املأ النموذج وسيتواصل معك فريقنا خلال 24 ساعة</p>
+    </div>
+    <div class="quote-container">
+        <form class="quote-form" id="quoteForm" data-aos="zoom-in-up">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name"><i class="fas fa-user"></i> الاسم الكامل</label>
+                    <input type="text" id="name" placeholder="اكتب اسمك هنا" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone"><i class="fas fa-phone"></i> رقم الجوال</label>
+                    <input type="tel" id="phone" placeholder="05xxxxxxxx" required>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i> البريد الإلكتروني (اختياري)</label>
+                    <input type="email" id="email" placeholder="example@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="service"><i class="fas fa-list"></i> نوع الخدمة</label>
+                    <select id="service" required>
+                        <option value="">اختر نوع الخدمة</option>
+                        <option value="تأجير سيارات">تأجير سيارات</option>
+                        <option value="تأجير شاحنات">تأجير شاحنات</option>
+                        <option value="تأجير حافلات">تأجير حافلات</option>
+                        <option value="إدارة أساطيل">إدارة أساطيل</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group form-full" style="margin-bottom: 20px;">
+                <label for="details"><i class="fas fa-comment-alt"></i> تفاصيل الطلب</label>
+                <textarea id="details" placeholder="اكتب تفاصيل طلبك هنا..." style="width: 100%;"></textarea>
+            </div>
+
+            <div class="form-buttons">
+                <button type="button" class="quote-submit" id="sendWhatsapp" style="flex: 1;">
+                    <i class="fab fa-whatsapp"></i> أرسل عبر واتساب
+                </button>
+                <button type="button" class="quote-submit btn-email" id="sendEmail" style="flex: 1;">
+                    <i class="fas fa-envelope"></i> أرسل عبر البريد
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<div class="social-fixed">
+    <a href="https://wa.me/966505509571" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://x.com/Mobilevehiclesa" target="_blank"><i class="fab fa-x-twitter"></i></a>
+    <a href="https://instagram.com/Mobilevehiclesa" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://linkedin.com/company/Mobilevehiclesa" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+</div>
+
+<footer>
+    <!-- انسخي نفس الفوتر السابق هنا -->
+    <div class="footer-content">
+        <div class="footer-brand">
+            <img src="logo.jpeg" alt="شعار">
+            <p>شركة سعودية متخصصة في الخدمات اللوجستية، نعمل على تلبية احتياجات الأفراد والشركات عبر أسطول متنوع وخدمات مرنة.</p>
+            <div class="social-links">
+                <a href="https://x.com/Mobilevehiclesa" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://instagram.com/Mobilevehiclesa" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/company/Mobilevehiclesa" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://wa.me/966505509571" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h3>روابط سريعة</h3>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="services.html">خدماتنا</a></li>
+                <li><a href="fleet.html">أسطولنا</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>خدماتنا</h3>
+            <ul>
+                <li><a href="service-details.html?service=cars">تأجير السيارات</a></li>
+                <li><a href="service-details.html?service=trucks">تأجير الشاحنات</a></li>
+                <li><a href="service-details.html?service=buses">تأجير الحافلات</a></li>
+                <li><a href="service-details.html?service=fleet">إدارة الأساطيل</a></li>
+            </ul>
+        </div>
+        <div class="footer-col contact-info">
+            <h3>تواصل معنا</h3>
+            <p><i class="fas fa-phone-alt"></i> <a href="tel:+920016173">+920016173</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:Info@mobilevehicle.sa">Info@mobilevehicle.sa</a></p>
+            <p><i class="fas fa-globe"></i> <a href="https://MOBILEVEHICLE.COM" target="_blank">MOBILEVEHICLE.COM</a></p>
+        </div>
+    </div>
+    <div class="footer-bottom">جميع الحقوق محفوظة &copy; 2026 <span>شركة العربة المتنقلة للخدمات اللوجستية</span></div>
+</footer>
+
+<a href="https://wa.me/966505509571" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+<button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({ duration: 1000, once: true });
+const progressBar = document.getElementById('progressBar');
+const header = document.getElementById('mainHeader');
+const backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+    const scrollTop = window.pageYOffset;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    progressBar.style.width = (scrollTop / docHeight) * 100 + '%';
+    header.classList.toggle('scrolled', scrollTop > 100);
+    backToTop.classList.toggle('show', scrollTop > 500);
+});
+backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+// إرسال الواتساب
+document.getElementById('sendWhatsapp').addEventListener('click', function() {
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const email = document.getElementById('email').value || 'غير متوفر';
+    const service = document.getElementById('service').value;
+    const details = document.getElementById('details').value || 'لا توجد تفاصيل إضافية';
+    
+    if(!name || !phone || !service) { alert('يرجى تعبئة الحقول الأساسية'); return; }
+
+    const message = `*طلب عرض سعر جديد*\n\n👤 *الاسم:* ${name}\n📱 *الجوال:* ${phone}\n📧 *البريد:* ${email}\n🛎 *الخدمة:* ${service}\n📝 *التفاصيل:* ${details}`;
+    window.open(`https://wa.me/966505509571?text=${encodeURIComponent(message)}`, '_blank');
+});
+
+// إرسال البريد الإلكتروني
+document.getElementById('sendEmail').addEventListener('click', function() {
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const email = document.getElementById('email').value;
+    const service = document.getElementById('service').value;
+    const details = document.getElementById('details').value || 'لا توجد تفاصيل إضافية';
+    
+    if(!name || !phone || !service) { alert('يرجى تعبئة الحقول الأساسية'); return; }
+
+    const subject = `طلب عرض سعر - ${service}`;
+    const body = `مرحباً،\n\nأود طلب عرض سعر للخدمة التالية:\n\nالاسم: ${name}\nالجوال: ${phone}\nالبريد الإلكتروني: ${email}\nالخدمة المطلوبة: ${service}\n\nتفاصيل إضافية:\n${details}`;
+    
+    window.location.href = `mailto:Info@mobilevehicle.sa?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+});
+</script>
+</body>
+</html>

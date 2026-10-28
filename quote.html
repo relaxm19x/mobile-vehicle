@@ -88,7 +88,6 @@
 </div>
 
 <footer>
-    <!-- انسخي نفس الفوتر السابق هنا -->
     <div class="footer-content">
         <div class="footer-brand">
             <img src="logo.jpeg" alt="شعار">
@@ -160,7 +159,7 @@ document.getElementById('sendWhatsapp').addEventListener('click', function() {
     window.open(`https://wa.me/966505509571?text=${encodeURIComponent(message)}`, '_blank');
 });
 
-// إرسال البريد الإلكتروني
+// إرسال البريد الإلكتروني (تعديل لفتح Gmail في المتصفح مباشرة)
 document.getElementById('sendEmail').addEventListener('click', function() {
     const name = document.getElementById('name').value;
     const phone = document.getElementById('phone').value;
@@ -173,7 +172,9 @@ document.getElementById('sendEmail').addEventListener('click', function() {
     const subject = `طلب عرض سعر - ${service}`;
     const body = `مرحباً،\n\nأود طلب عرض سعر للخدمة التالية:\n\nالاسم: ${name}\nالجوال: ${phone}\nالبريد الإلكتروني: ${email}\nالخدمة المطلوبة: ${service}\n\nتفاصيل إضافية:\n${details}`;
     
-    window.location.href = `mailto:Info@mobilevehicle.sa?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    // فتح صفحة إنشاء رسالة جديدة في Gmail مباشرة على المتصفح
+    const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=Info@mobilevehicle.sa&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.open(gmailLink, '_blank');
 });
 </script>
 </body>
